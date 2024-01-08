@@ -1,1 +1,2 @@
 247
+mongodb+srv://hamdanraza309:Hamdan12@cluster0.2kmzsps.mongodb.net/amazona?retryWrites=true&w=majority

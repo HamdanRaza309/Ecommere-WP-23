@@ -1,5 +1,15 @@
 import express from 'express';
 import data from './data.js';
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+
+dotenv.config(); // use to fetch variables from .env 
+
+mongoose.connect(process.env.MONGODB_URI).then(() => {
+  console.log('Connected to DataBase.')
+}).catch((err) => {
+  console.log(err.message)
+})
 
 const app = express();
 // test
